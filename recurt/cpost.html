@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recuirtment System</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="base">
+            <form action="jinsert.php" method="post">
+                <h1 class="clr">Posting a job</h1>
+
+                <label>Job Title</label><br>
+                <input type="text" name="title" required placeholder="Enter Job Title.."><br>
+
+                <label>Qualification</label><br>
+                <input type="text" name="qual" required placeholder="Enter required Qualification.."><br>
+
+                <label>Mobile Number</label><br>
+                <input type="text" name="number" required maxlength="10" placeholder="Enter Company Mobile Number.."><br>
+
+                <label>Address</label><br>
+                <textarea name="address"></textarea>
+                <input type="submit" value="Post a Job" name="post">
+            </form><br><br/>
+            <a href="viewjob.php">
+            <input type="submit" name="posted" value="See Posted Job List"></a>
+            <br><br/>
+        </div>
+    </div>
+</body>
+
+</html>

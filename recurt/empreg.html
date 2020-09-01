@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Registration</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="base">
+            <form action="einsert.php" method="post">
+
+                <center>
+                    <h1 class="clr">Register Here</h1>
+                </center>
+
+
+                <label>First Name</label><br>
+                <input type="text" name="firstName" required placeholder="Your name.."><br>
+
+                <label>Last Name</label><br>
+                <input type="text" name="lastName" placeholder="Your last name.."><br>
+
+                <label>Email</label><br>
+                <input type="email" name="email" required placeholder="Your Email.."><br>
+
+                <label for="mnum">Mobile Number</label><br>
+                <input type="text" name="number" required maxlength="10" placeholder="Your Mobile Number.."><br>
+
+                <label>Gender</label>
+                <input type="radio" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label><br><br>
+
+                <label>Password</label><br>
+                <input type="password" name="password" required placeholder="Your Password.."><br><br>
+
+                <input type="submit" value="Submit" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
